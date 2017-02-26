@@ -1,0 +1,32 @@
+{
+    "name": "IMZh",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "IMZh is a localization tool to translate IMDB movie name to Chinese",
+    "icons": {
+        "16": "icon/icon-16.png",
+        "32": "icon/icon-32.png",
+        "48": "icon/icon-48.png",
+        "128": "icon/icon-128.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://www.imdb.com/title/*", "https://www.imdb.com/title/*"],
+        "js": [
+            "lib/cache.js",
+            "lib/parser.js",
+            "lib/item.js"
+        ]
+    }, {
+        "matches": ["http://www.imdb.com/chart/*", "https://www.imdb.com/chart/*"],
+        "js": [
+            "lib/cache.js",
+            "lib/parser.js",
+            "lib/chart.js"
+        ]
+    }],
+    "permissions": [
+        "https://*.wikipedia.org/wiki/*",
+        "https://*.wikipedia.org/wiki/*"
+    ]
+}

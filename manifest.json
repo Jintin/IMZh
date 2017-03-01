@@ -24,7 +24,16 @@
             "lib/parser.js",
             "lib/chart.js"
         ]
-    }],
+    },{
+        "matches": ["http://www.imdb.com/search/*", "https://www.imdb.com/search/*"],
+        "js": [
+            "lib/cache.js",
+            "lib/parser.js",
+            "lib/search.js"
+        ]
+    }
+
+  ],
     "permissions": [
         "https://*.wikipedia.org/wiki/*"
     ]

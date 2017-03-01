@@ -1,6 +1,6 @@
 {
     "name": "IMZh",
-    "version": "1.1",
+    "version": "1.2",
     "manifest_version": 2,
 
     "description": "IMZh is a localization tool to translate IMDB movie name to Chinese",
@@ -11,29 +11,29 @@
         "128": "icon/icon-128.png"
     },
     "content_scripts": [{
-        "matches": ["http://www.imdb.com/title/*", "https://www.imdb.com/title/*"],
-        "js": [
-            "lib/cache.js",
-            "lib/parser.js",
-            "lib/title.js"
-        ]
-    }, {
-        "matches": ["http://www.imdb.com/chart/*", "https://www.imdb.com/chart/*"],
-        "js": [
-            "lib/cache.js",
-            "lib/parser.js",
-            "lib/chart.js"
-        ]
-    },{
-        "matches": ["http://www.imdb.com/search/*", "https://www.imdb.com/search/*"],
-        "js": [
-            "lib/cache.js",
-            "lib/parser.js",
-            "lib/search.js"
-        ]
-    }
+            "matches": ["http://www.imdb.com/title/*", "https://www.imdb.com/title/*"],
+            "js": [
+                "lib/cache.js",
+                "lib/parser.js",
+                "lib/title.js"
+            ]
+        }, {
+            "matches": ["http://www.imdb.com/chart/*", "https://www.imdb.com/chart/*"],
+            "js": [
+                "lib/cache.js",
+                "lib/parser.js",
+                "lib/chart.js"
+            ]
+        }, {
+            "matches": ["http://www.imdb.com/search/*", "https://www.imdb.com/search/*"],
+            "js": [
+                "lib/cache.js",
+                "lib/parser.js",
+                "lib/search.js"
+            ]
+        }
 
-  ],
+    ],
     "permissions": [
         "https://*.wikipedia.org/wiki/*"
     ]

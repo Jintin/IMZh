@@ -1,8 +1,10 @@
 # IMZh
-IMZh is a localization tool to translate IMDB movie name to Chinese
+IMZh is a localization tool to translate IMDb movie name to Chinese
 
 ## Installation
-Visit [Download page](https://chrome.google.com/webstore/detail/imzh/plkfiilaiekcjgahedeodpkleeajhhhd) and click `ADD TO CHROME` button.
+For Chrome extension, visit [Download page](https://chrome.google.com/webstore/detail/imzh/plkfiilaiekcjgahedeodpkleeajhhhd) and click `ADD TO CHROME` button.
+
+For Safari extension, download from [here](https://github.com/ethanhuang13/IMZh/IMZh.safariextz) and install it.
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at [https://github.com/Jintin/IMZh](https://github.com/Jintin/IMZh).

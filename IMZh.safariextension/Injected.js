@@ -46,11 +46,6 @@ function parseEvent(theMessageEvent) {
             node.textContent = name + "(" + year + ")";
         }
 	}
-
-    if (theMessageEvent.name === "theAnswer") {
-        calculatedVal = theMessageEvent.message;
-        console.log(calculatedVal);
-    }
 }
 
 safari.self.addEventListener("message", parseEvent, false);

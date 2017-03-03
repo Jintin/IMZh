@@ -7,6 +7,5 @@ for (var i = 0; i < nodes.length; i++) {
 
     getWikiEn(nodes[i].children[1], title, year, function(target, name) {
         target.textContent = name + "(" + year + ")";
-
     })
 }

@@ -15,7 +15,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -30,10 +30,6 @@
 				<string>lib/cache.js</string>
 				<string>lib/chart.js</string>
 				<string>lib/parser.js</string>
-				<string>lib/title.js</string>
-			</array>
-			<key>Start</key>
-			<array>
 				<string>Injected.js</string>
 			</array>
 		</dict>

@@ -49,3 +49,21 @@ function parseEvent(theMessageEvent) {
 }
 
 safari.self.addEventListener("message", parseEvent, false);
+
+title = document.title.substring(0, document.title.indexOf("(")).trim();
+year = document.title.substring(document.title.indexOf("(") + 1,
+    document.title.indexOf(")"));
+
+node = document.getElementById('titleYear');
+
+if (cache[title + year]) {
+    var name = cache[title + year]
+    node.textContent = name + "(" + year + ")";
+} else {
+    list = [
+        "https://en.wikipedia.org/wiki/" + title + " (" + year + "_film)",
+        "https://en.wikipedia.org/wiki/" + title + " (film)",
+        "https://en.wikipedia.org/wiki/" + title
+    ];
+    connectWikiEn(list);
+}

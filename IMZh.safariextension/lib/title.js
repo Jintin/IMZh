@@ -4,11 +4,6 @@ year = document.title.substring(document.title.indexOf("(") + 1,
 
 node = document.getElementById('titleYear');
 
-if (window.top === window 
-	&& title 
-	&& year 
-	&& node) {
 getWikiEn(node, title, year, function(target, name) {
     node.textContent = name + "(" + year + ")";
 });
-}

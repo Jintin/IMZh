@@ -49,5 +49,13 @@ function getWikiEn(target, title, year, callback) {
         "https://en.wikipedia.org/wiki/" + title
     ];
 
-    connectWikiEn(list);
+    connect(list, function(name) {
+        var checkStart = " – Chinese\" lang=\"zh\"";
+        var checkEnd = "title=\"";
+        name = name.substring(0, name.indexOf(checkStart));
+        name = name.substring(name.lastIndexOf(checkEnd) + checkEnd.length, name.length);
+        if (name) {
+            getWikiTw(target, name, callback);
+        }
+    });
 }

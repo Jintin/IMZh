@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>global HTML page</title>
+<script type="text/javascript">
+
+function getRequest(urls, event, responseName) {
+    process(0);
+
+    function process(index) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", urls[index], true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 404) {
+                if (index < urls.length) {
+                    process(index + 1);
+                } else {
+                    console.log("not found");
+                }
+                return;
+            }
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var content = xhr.responseText;
+                event.target.page.dispatchMessage(responseName, content);
+            }
+        }
+        xhr.send();
+    }
+}
+ 
+function respondToMessage(theMessageEvent) {
+    if(theMessageEvent.name === "connectWikiEn") {
+        var urls = theMessageEvent.message;
+        console.log("connectWikiEn: " + urls);
+        getRequest(urls, theMessageEvent, theMessageEvent.name);
+    }
+
+    if(theMessageEvent.name === "connectWikiTw") {
+        var urls = theMessageEvent.message;
+        console.log("connectWikiTw: " + urls);
+        getRequest(urls, theMessageEvent, theMessageEvent.name);
+    }
+}
+
+safari.application.addEventListener("message", respondToMessage, false);
+</script>
+</head>
+<body></body>
+</html>

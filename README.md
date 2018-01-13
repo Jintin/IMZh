@@ -3,7 +3,10 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/plkfiilaiekcjgahedeodpkleeajhhhd.svg?colorB=brightgreen)](https://chrome.google.com/webstore/detail/imzh/plkfiilaiekcjgahedeodpkleeajhhhd)
 [![Code Climate](https://codeclimate.com/github/Jintin/IMZh/badges/gpa.svg)](https://codeclimate.com/github/Jintin/IMZh)
 
-IMZh is a localization tool to translate IMDB movie name to Chinese
+IMZh is a localization tool to translate IMDb movie name to Chinese
+
+## Preview
+![](https://lh3.googleusercontent.com/4Rw36ayUoe_ryHxUom2dK5q1fEZqn-20KmyBFIYG1g35I-bkJo2ncQtRUrfdEbjrNEw9xX2q8g=w640-h400-e365)
 
 ## Installation
 

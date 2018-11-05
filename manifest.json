@@ -1,6 +1,6 @@
 {
     "name": "IMZh",
-    "version": "1.5",
+    "version": "1.6",
     "manifest_version": 2,
 
     "description": "IMZh is a localization tool to translate IMDB movie name to Chinese",

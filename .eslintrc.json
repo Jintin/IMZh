@@ -1,3 +1,5 @@
-"env": {
-    "webextensions": true
+{
+    "env": {
+        "webextensions": true
+    }
 }

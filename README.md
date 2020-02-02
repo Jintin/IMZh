@@ -1,9 +1,10 @@
 # IMZh
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d5f3b49839514c908fb762227c4d344d)](https://app.codacy.com/app/Jintin/IMZh?utm_source=github.com&utm_medium=referral&utm_content=Jintin/IMZh&utm_campaign=Badge_Grade_Settings)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b263dad531aa4eb1b85b5727fb237691)](https://app.codacy.com/app/Jintin/IMZh?utm_source=github.com&utm_medium=referral&utm_content=Jintin/IMZh&utm_campaign=badger)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/plkfiilaiekcjgahedeodpkleeajhhhd.svg?colorB=brightgreen)](https://chrome.google.com/webstore/detail/imzh/plkfiilaiekcjgahedeodpkleeajhhhd)
 [![Code Climate](https://codeclimate.com/github/Jintin/IMZh/badges/gpa.svg)](https://codeclimate.com/github/Jintin/IMZh)
+
+**Deprecated since IMDB start support Chinese.**
 
 IMZh is a localization tool to translate IMDb movie name to Chinese
 
